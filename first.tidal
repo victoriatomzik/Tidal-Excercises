@@ -1,28 +1,33 @@
-d1 $ sound "bd [sn hh]/2 hh*2"
+d1 $ slow 2 $ every 10 (rev) (sound "[tabla2:2 tabla3:4*2 tabla:8] [tabla:3*3] [arpy:2 arpy:3*2]")
+    # gain "[0.4 0.5 0.8]/5"
+    # speed (slow 0.2 "[0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9]/5")
 d1 $ silence
 
 d2 $ sound "sn [sn*2] sn cp, [cp*2 cp]/2"
 d2 $ silence
 
-d3 $ sound "[arpy arpy:2], [cp]"
+d3 $ every 4 (rev) (sound "[arpy arpy:2, cp]")
 d3 $ silence
 
 d4 $ sound "[cp cp cp, bd/4]"
 d4 $ silence
 
-d5 $ sound "[cp*4, bd*4 bd]"
+d5 $ slow 2 $ sound "[cp*4, bd*4 bd]"
+    # speed "2.5"
 d5 $ silence
 
-d6 $ sound "cp/4"
+d6 $ density 2 $ sound "cp/4 bd"
 d6 $ silence
 
 d7 $ sound "[bd bd, sn sn cp cp]"
 d7 $ silence
 
-d7 $ sound "[sn cp hh bd]/4"
+d8 $ rev (sound "[sn cp hh*2 bd bd]/2")
 d8 $ silence
 
-d7 $ sound
+d9 $ sound "[tabla2:2 tabla2:4/2 tabla2:6/4]*2 [tabla2:3/2]"
 d9 $ silence
+
+cps 0.75
 
 hush
