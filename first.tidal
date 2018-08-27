@@ -1,1 +1,28 @@
-solo $ d1 $ sound "bd sn"
+d1 $ sound "bd [sn hh]/2 hh*2"
+d1 $ silence
+
+d2 $ sound "sn [sn*2] sn cp, [cp*2 cp]/2"
+d2 $ silence
+
+d3 $ sound "[arpy arpy:2], [cp]"
+d3 $ silence
+
+d4 $ sound "[cp cp cp, bd/4]"
+d4 $ silence
+
+d5 $ sound "[cp*4, bd*4 bd]"
+d5 $ silence
+
+d6 $ sound "cp/4"
+d6 $ silence
+
+d7 $ sound "[bd bd, sn sn cp cp]"
+d7 $ silence
+
+d7 $ sound "[sn cp hh bd]/4"
+d8 $ silence
+
+d7 $ sound
+d9 $ silence
+
+hush
